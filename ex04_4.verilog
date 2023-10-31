@@ -1,0 +1,44 @@
+// Name: Nakamura Shun
+// ID:   s1300039
+
+initial
+begin
+
+    A[7:0] = 8'h01;
+    B[7:0] = 8'h39;
+    addsub = 1'b0;
+
+    #200
+
+    A[7:0] = 8'h56;
+    B[7:0] = 8'h39;
+    addsub = 1'b0;
+
+    #200
+
+    A[7:0] = 8'hab;
+    B[7:0] = 8'h39;
+    addsub = 1'b0;
+
+    #200
+
+    A[7:0] = 8'h01;
+    B[7:0] = 8'h39;
+    addsub = 1'b1;
+
+    #200
+
+    A[7:0] = 8'h56;
+    B[7:0] = 8'h39;
+    addsub = 1'b1;
+
+    #200
+
+    A[7:0] = 8'hab;
+    B[7:0] = 8'h39;
+    addsub = 1'b1;
+
+    #200
+
+    $finish;
+end
