@@ -1,0 +1,11 @@
+// Name: Nakamura Shun
+// ID:   s1300039
+
+initial
+begin
+
+
+    $finish;
+end
+
+always #?? clock = ~clock;
