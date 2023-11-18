@@ -7,115 +7,115 @@ begin
     reset = 1'b1;
     start = 1'b0;
 
+    #50
+
+    reset = 1'b0; // 50ns
+
     #25
 
-    reset = 1'b0; // 25ns
-
-    #10
-
     // --------------------
-    start = 1'b0; // 35ns
+    start = 1'b0; // 75ns
 
-    #30 // From state 000 to 000
+    #50 // From state 000 to 000
 
-    start = 1'b0; // 65ns
+    start = 1'b0; // 125ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b1; // 85ns
+    start = 1'b1; // 150ns
 
-    #30 // From state 000 to 001
+    #50 // From state 000 to 001
 
-    start = 1'b0; // 115ns
+    start = 1'b0; // 200ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b0; // 135ns
+    start = 1'b0; // 225ns
 
-    #30 // From state 001 to 001
+    #50 // From state 001 to 001
 
-    start = 1'b0; // 165ns
+    start = 1'b0; // 275ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b1; // 185ns
+    start = 1'b1; // 300ns
 
-    #30 // From state 001 to 010
+    #50 // From state 001 to 010
 
-    start = 1'b0; //215ns
+    start = 1'b0; // 350ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b0; // 235ns
+    start = 1'b0; // 375ns
 
-    #30 // From state 010 to 010
+    #50 // From state 010 to 010
 
-    start = 1'b0; // 265ns
+    start = 1'b0; // 425ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b1; // 285ns
+    start = 1'b1; // 450ns
 
-    #30 // From state 010 to 011
+    #50 // From state 010 to 011
 
-    start = 1'b0; // 315ns
+    start = 1'b0; // 500ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b0; // 335ns
+    start = 1'b0; // 525ns
 
-    #30 // From state 011 to 011
+    #50 // From state 011 to 011
 
-    start = 1'b0; // 365ns
+    start = 1'b0; // 575ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b1; // 385ns
+    start = 1'b1; // 600ns
 
-    #30 // From state 011 to 100
+    #50 // From state 011 to 100
 
-    start = 1'b0; // 415ns
+    start = 1'b0; // 650ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b0; // 435ns
+    start = 1'b0; // 675ns
 
-    #30 // From state 100 to 100
+    #50 // From state 100 to 100
 
-    start = 1'b0; // 465ns
+    start = 1'b0; // 725ns
     // --------------------
 
-    #20
+    #25
 
     // --------------------
-    start = 1'b1; // 485ns
+    start = 1'b1; // 750ns
 
-    #30 // From state 100 to 000
+    #50 // From state 100 to 000
 
-    start = 1'b0; // 515ns
+    start = 1'b0; // 800ns
     // --------------------
 
-    #20
+    #25
 
-    #15
+    #25
 
-    $finish; // 550ns
+    $finish; // 850ns
 end
 
-always #25 clock = ~clock;
+always #50 clock = ~clock;
