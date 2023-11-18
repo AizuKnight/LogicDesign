@@ -9,111 +9,113 @@ begin
 
     #25
 
-    reset = 1'b0;
+    reset = 1'b0; // 25ns
 
     #10
 
     // --------------------
-    start = 1'b0;
+    start = 1'b0; // 35ns
 
-    #30 // From state 00 to 00
+    #30 // From state 000 to 000
 
-    start = 1'b0;
+    start = 1'b0; // 65ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b1;
+    start = 1'b1; // 85ns
 
     #30 // From state 000 to 001
 
-    start = 1'b0;
+    start = 1'b0; // 115ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b0;
+    start = 1'b0; // 135ns
 
     #30 // From state 001 to 001
 
-    start = 1'b0;
+    start = 1'b0; // 165ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b1;
+    start = 1'b1; // 185ns
 
     #30 // From state 001 to 010
 
-    start = 1'b0;
+    start = 1'b0; //215ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b0;
+    start = 1'b0; // 235ns
 
     #30 // From state 010 to 010
 
-    start = 1'b0;
+    start = 1'b0; // 265ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b1;
+    start = 1'b1; // 285ns
 
     #30 // From state 010 to 011
 
-    start = 1'b0;
+    start = 1'b0; // 315ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b0;
+    start = 1'b0; // 335ns
 
     #30 // From state 011 to 011
 
-    start = 1'b0;
+    start = 1'b0; // 365ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b1;
+    start = 1'b1; // 385ns
 
     #30 // From state 011 to 100
 
-    start = 1'b0;
+    start = 1'b0; // 415ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b0;
+    start = 1'b0; // 435ns
 
     #30 // From state 100 to 100
 
-    start = 1'b0;
+    start = 1'b0; // 465ns
     // --------------------
 
     #20
 
     // --------------------
-    start = 1'b1;
+    start = 1'b1; // 485ns
 
     #30 // From state 100 to 000
 
-    start = 1'b0;
+    start = 1'b0; // 515ns
     // --------------------
 
-    #10
+    #20
 
-    $finish;
+    #15
+
+    $finish; // 550ns
 end
 
 always #25 clock = ~clock;
