@@ -4,10 +4,14 @@
 initial
 begin
     clock = 1'b1;
-    reset = 1'b1;
+    reset = 1'b0;
     start = 1'b0;
 
-    #50
+    #5
+
+    reset = 1'b1;
+
+    #45
 
     reset = 1'b0; // 50ns
 
